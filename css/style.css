@@ -1,0 +1,53 @@
+.back-ground-prop {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+  }
+  
+  .back-ground-prop > h1, .the-box {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .the-box {
+    background: white;
+  }
+  
+  .the-box > h2, p {
+    margin: 4px;
+    font-size: 90%;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
+  h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+  body {	display: block;
+margin: 8px;
+  }
+  p	{ display: block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0;
+margin-right: 0;
+  }
