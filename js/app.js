@@ -1,8 +1,8 @@
 "use strict";
 var userName = prompt('what is your name?');
 alert ('hello '+userName+' i am glad to be my guest');
-
-var g=0; // this one for marking the seventh quesiton
+var mark=0;
+// var g=0; // this one for marking the seventh quesiton
 
 
 var questionOne = prompt('Do you think i like University learning approch?');
@@ -19,10 +19,12 @@ switch (questionOne.toLocaleLowerCase()) {
     case "no":
         console.log('You are right I dont like university approach');
         alert ('You are right I dont like university approach');
+        mark++;
     break;
     case "n":
 console.log('You are right I dont like university approach');
 alert ('You are right I dont like university approach');
+mark++;
 }
 
 
@@ -40,10 +42,12 @@ switch (questionTwo.toLocaleLowerCase()){
     case "no":
         //console.log('yes, I dont watch football');
         alert ('yes, I dont watch football');
+        mark++;
     break;
     case "n":
         //console.log('yes, I dont watch football');
         alert ('yes, I dont watch football');
+        mark++;
 }
 
 
@@ -61,10 +65,12 @@ switch (questionThree.toLocaleLowerCase()){
     case "no":
         //console.log('Yes, you are right I studied mechanical engineering');
         alert ('Yes, you are right I studied mechanical engineering');
+        mark++;
     break;
     case "n":
             //console.log('Yes, you are right I studied mechanical engineering');
-            alert ('Yes, you are right I studied mechanical engineering');    
+            alert ('Yes, you are right I studied mechanical engineering');
+            mark++;    
 }
 
 
@@ -74,10 +80,12 @@ switch (questionFour.toLocaleLowerCase()){
     case "yes":
         //console.log('I think my english its good yes');
         alert ('I think my english its good yes');
+        mark++;
     break;
     case "y":  
         //console.log('I think my english its good yes');
         alert ('I think my english its good yes');
+        mark++;
     break;
     case "no":
         //console.log('sorry man but i think my english is good');
@@ -103,10 +111,12 @@ switch (questionFive.toLocaleLowerCase()){
     case "no":
         //console.log('yes, i will send my car to crage');
         alert ('yes, i will send my car to crage');
+        mark++;
     break;    
     case "n":
         //console.log('yes, i will send my car to crage');
-        alert ('yes, i will send my car to crage');    
+        alert ('yes, i will send my car to crage');
+        mark++;    
 }
 
 alert ('thank you '+userName+' lets start know each other');
@@ -130,8 +140,8 @@ while ( (guessingTryAttempt < guessingTryAllow) && (i!==1)) {
         console.log('did it, you are my man');
         alert('did it, you are my man');
         i++;
+        mark++;
         // console.log(i);
-
     }
 }
 var myFavFood = ['mansaf','pizza','msakkan','shawerma'];
@@ -145,10 +155,10 @@ do {
     // console.log(typeof questionSeven);
     // console.log(typeof myFavFood);
     guessingTryAttempt2++;
-    if (questionSeven.toLowerCase() === (myFavFood[0] ||myFavFood[1] || myFavFood[2] || myFavFood[3])){
+    if (questionSeven.toLowerCase() === myFavFood[0] || questionSeven.toLowerCase() === myFavFood[1] || questionSeven.toLowerCase() === myFavFood[2] || questionSeven.toLowerCase() === myFavFood[3]) {
         alert('yes this is my favourit food'); 
         j++;
-        g=1;      
+        mark++;      
     }
 }
 
@@ -156,64 +166,66 @@ while ((guessingTryAttempt2 < guessingTryAllow2) && (j!=1));
 
 alert('actually my favourite foods are mansaf,shawerma,Pizza and msakkan')
 
-var a=0;
-var b=0;
-var c=0;
-var d=0;
-var e=0;
-var f=0;
+// var a=0;
+// var b=0;
+// var c=0;
+// var d=0;
+// var e=0;
+// var f=0;
 
-// question one mark
-if (questionOne.toLocaleLowerCase() == 'n') {
-    a=1
-}
-if (questionOne.toLocaleLowerCase() == 'no') {
-    a=1
-}
-console.log(questionOne.toLocaleLowerCase());
-console.log(a);
+// // question one mark
+// if (questionOne.toLocaleLowerCase() == 'n') {
+//     a=1
+// }
+// if (questionOne.toLocaleLowerCase() == 'no') {
+//     a=1
+// }
+// console.log(questionOne.toLocaleLowerCase());
+// console.log(a);
 
-// question two mark
-if (questionTwo.toLocaleLowerCase() == 'n') {
-    b=1;
-}
-if (questionTwo.toLocaleLowerCase() == 'no') {
-    b=1;
-}
+// // question two mark
+// if (questionTwo.toLocaleLowerCase() == 'n') {
+//     b=1;
+// }
+// if (questionTwo.toLocaleLowerCase() == 'no') {
+//     b=1;
+// }
 
-// question three mark
-if (questionThree.toLocaleLowerCase() == 'n') {
-    c=1;
-}
-if (questionThree.toLocaleLowerCase() == 'no') {
-    c=1;
-}
+// // question three mark
+// if (questionThree.toLocaleLowerCase() == 'n') {
+//     c=1;
+// }
+// if (questionThree.toLocaleLowerCase() == 'no') {
+//     c=1;
+// }
 
-// question four mark
-if (questionFour.toLocaleLowerCase() == 'y') {
-    d=1;
-}
-if (questionFour.toLocaleLowerCase() == 'yes') {
-    d=1;
-}
+// // question four mark
+// if (questionFour.toLocaleLowerCase() == 'y') {
+//     d=1;
+// }
+// if (questionFour.toLocaleLowerCase() == 'yes') {
+//     d=1;
+// }
 
-// question five mark
-if (questionFive.toLocaleLowerCase() == 'n') {
-    e=1;
-}
-if (questionFive.toLocaleLowerCase() == 'no') {
-    e=1;
-}
+// // question five mark
+// if (questionFive.toLocaleLowerCase() == 'n') {
+//     e=1;
+// }
+// if (questionFive.toLocaleLowerCase() == 'no') {
+//     e=1;
+// }
 
-// question six mark
-if (gussedNumber ==5 ) {
-    f=1;
-}
-if (questionOne.toLocaleLowerCase() == 'no') {
-    f=1;
-}
+// // question six mark
+// if (gussedNumber ==5 ) {
+//     f=1;
+// }
+// if (questionOne.toLocaleLowerCase() == 'no') {
+//     f=1;
+// }
 
-// question seven mark it's in quesion seven code
+// // question seven mark it's in quesion seven code
 
-var mark= a+b+c+d+e+f+g;
-alert ('your mark is '+mark+' you are amazing');
+// var mark= a+b+c+d+e+f+g;
+alert ('your mark is ('+mark+' from 7) ,you are amazing');
+// console.log(typeof mark);
+// console.log(mark);
