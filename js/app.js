@@ -62,7 +62,7 @@ switch (questionFive.toLocaleLowerCase()){
     break;            
 }
 
-
+alert ('thank you '+userName+' lets start know each other');
 
 
 
