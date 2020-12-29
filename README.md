@@ -1,6 +1,7 @@
 ## Synopsis
 
-this web is about introducing my self. and playing a game with a user if (he/she) could guess things about me.
+- this web is about introducing my self. and playing a game with a user if (he/she) could guess things about me.
+- I did two more question using loops.
 
 ## Code Example
 
