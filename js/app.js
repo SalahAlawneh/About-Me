@@ -121,11 +121,12 @@ do {
     // console.log(typeof questionSeven);
     // console.log(typeof myFavFood);
     guessingTryAttempt2++;
-    if (questionSeven.toLowerCase() === myFavFood[0] || questionSeven.toLowerCase() === myFavFood[1] || questionSeven.toLowerCase() === myFavFood[2] || questionSeven.toLowerCase() === myFavFood[3]) {
-        alert('yes this is my favourit food');
+    for (var index=0; index<questionSeven.length; index++) {
+    if (questionSeven.toLowerCase() === myFavFood[index] ) {
+        alert('you are right man that is amazing');
         j++;
         mark++;
-    }
+    }}
 }
 
 while ((guessingTryAttempt2 < guessingTryAllow2) && (j != 1));
