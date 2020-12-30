@@ -28,3 +28,11 @@ you could get this project from my github account with this url: https://salahal
 ## License
 
 MIT License
+
+## pairing Programming 
+
+Driver - Ruba Banat
+Navigator - Salah Alawneh
+
+What I did :
+- adding functions for all questions and tested it .
