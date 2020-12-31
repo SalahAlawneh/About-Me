@@ -32,6 +32,7 @@
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
+    text-align: center;
   }
 
   h2	{ display: block;
@@ -83,4 +84,13 @@ padding-left: 40px;
   
 li {
   display: list-item;	
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height:30% ;
+  border-radius: 50%;
 }
