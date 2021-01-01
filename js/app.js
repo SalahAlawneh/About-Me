@@ -156,5 +156,5 @@ quizSeven();
 
 
 
-alert('thank you ' + userName + ' now you know me.' + 'your mark is (' + mark + ' from 7) ,you are amazing');
+alert('thank you ' + userName + ' now you know me. ' + 'your mark is (' + mark + ' from 7) , you are amazing');
 
