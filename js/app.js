@@ -9,12 +9,12 @@ function quizOne() {
     switch (questionOne.toLocaleLowerCase()) {
         case "yes":
         case "y":
-            // console.log('Actually no I dont like university approach');
+            // // console.log('Actually no I dont like university approach');
             alert('Actually no I dont like university approach');
             break;
         case "no":
         case "n":
-            // console.log('You are right I dont like university approach');
+            // // console.log('You are right I dont like university approach');
             alert('You are right I dont like university approach');
             mark++;
     }
@@ -27,12 +27,12 @@ function quizTwo() {
     switch (questionTwo.toLocaleLowerCase()) {
         case "yes":
         case "y":
-            //console.log('No, I dont watch football');
+            // //console.log('No, I dont watch football');
             alert('No, I dont watch football');
             break;
         case "no":
         case "n":
-            //console.log('yes, I dont watch football');
+            // //console.log('yes, I dont watch football');
             alert('yes, I dont watch football');
             mark++;
     }
@@ -45,12 +45,12 @@ function quizThree() {
     switch (questionThree.toLocaleLowerCase()) {
         case "yes":
         case "y":
-            //console.log('No, I studied mechanical engineering');
+            // //console.log('No, I studied mechanical engineering');
             alert('No, I studied mechanical engineering');
             break;
         case "no":
         case "n":
-            //console.log('Yes, you are right I studied mechanical engineering');
+            // //console.log('Yes, you are right I studied mechanical engineering');
             alert('Yes, you are right I studied mechanical engineering');
             mark++;
     }
@@ -63,13 +63,13 @@ function quizFour() {
     switch (questionFour.toLocaleLowerCase()) {
         case "yes":
         case "y":
-            //console.log('I think my english its good yes');
+            // //console.log('I think my english its good yes');
             alert('I think my english its good yes');
             mark++;
             break;
         case "no":
         case "n":
-            //console.log('sorry man but i think my english is good');
+            // //console.log('sorry man but i think my english is good');
             alert('sorry man but i think my english is good');
     }
 
@@ -81,16 +81,15 @@ function quizFive() {
     switch (questionFive.toLocaleLowerCase()) {
         case "yes":
         case "y":
-            //console.log('no, i cant fix cars');
+            // //console.log('no, i cant fix cars');
             alert('no, i cant fix cars');
             break;
         case "no":
         case "n":
-            //console.log('yes, i will send my car to crage');
+            // //console.log('yes, i will send my car to crage');
             alert('yes, i will send my car to crage');
             mark++;
     }
-    alert('thank you ' + userName + ' now you know me');
 
 }
 
@@ -102,22 +101,22 @@ function quizSix() {
     var guessingTryAllow = 4;
     var i = 0;
 
-    // console.log( gussedNumber);
+    // // console.log( gussedNumber);
     while ((guessingTryAttempt < guessingTryAllow) && (i !== 1)) {
         guessingTryAttempt++;
         var x = prompt('guess a number between 1 and 10, be careful you have just 4 attempt');
         var gussedNumber = parseInt(x);
 
         if (gussedNumber !== 5) {
-            // console.log('not yet, you are too close');
+            // // console.log('not yet, you are too close');
             alert('not yet, you are too close');
         }
         if (gussedNumber == 5) {
-            console.log('did it, you are my man');
+            // console.log('did it, you are my man');
             alert('did it, you are my man');
             i++;
             mark++;
-            // console.log(i);
+            // // console.log(i);
         }
     }
 
@@ -131,9 +130,9 @@ function quizSeven() {
 
     do {
         var questionSeven = prompt('whats my favourit food -you could try 6 times-?');
-        // console.log( typeof questionSeven);
-        // console.log(typeof questionSeven);
-        // console.log(typeof myFavFood);
+        // // console.log( typeof questionSeven);
+        // // console.log(typeof questionSeven);
+        // // console.log(typeof myFavFood);
         guessingTryAttempt2++;
         for (var index = 0; index < questionSeven.length; index++) {
             if (questionSeven.toLowerCase() === myFavFood[index]) {
@@ -157,6 +156,5 @@ quizSeven();
 
 
 
+alert('thank you ' + userName + ' now you know me.' + 'your mark is (' + mark + ' from 7) ,you are amazing');
 
-
-alert('your mark is (' + mark + ' from 7) ,you are amazing');
